@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FeaturedProducts from '../components/FeaturedProducts.astro';
+import Categories from '../components/Categories.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import config from '../../site.json';
+---
+<BaseLayout title="Home">
+  <Hero />
+  {config.sections.featured_products && <FeaturedProducts />}
+  {config.sections.categories && <Categories />}
+  {config.sections.about && <About />}
+  {config.sections.contact && <Contact />}
+</BaseLayout>

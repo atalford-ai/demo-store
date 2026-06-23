@@ -1,0 +1,101 @@
+{
+  "business_name": "ShopFront",
+  "tagline": "Curated Culture. Delivered.",
+  "description": "Premium streetwear, accessories, and handcrafted goods for the modern creative.",
+  "theme": "dark",
+  "fonts": {
+    "heading": "DM Sans",
+    "body": "Inter"
+  },
+  "colors": {
+    "accent": "#D4A843",
+    "accent_hover": "#B8912E"
+  },
+  "currency": "USD",
+  "currency_symbol": "$",
+  "is_demo": true,
+  "demo_cta": "https://altitudz.com",
+  "logo": "/assets/logo.svg",
+  "contact": {
+    "email": "hello@shopfront.com",
+    "phone": "(555) 987-6543",
+    "address": "456 Culture Ave, Atlanta, GA 30303"
+  },
+  "social": {
+    "instagram": "https://instagram.com/shopfront",
+    "twitter": "https://twitter.com/shopfront",
+    "tiktok": "https://tiktok.com/@shopfront"
+  },
+  "sections": {
+    "hero": true,
+    "featured_products": true,
+    "categories": true,
+    "about": true,
+    "contact": true,
+    "footer": true,
+    "testimonials": false,
+    "blog": false,
+    "wishlist": false,
+    "reviews": false
+  },
+  "categories": [
+    { "name": "Apparel", "icon": "shirt", "description": "Streetwear & essentials", "image": "https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=400&h=300&fit=crop" },
+    { "name": "Accessories", "icon": "watch", "description": "Chains, hats, bags", "image": "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=400&h=300&fit=crop" },
+    { "name": "Art & Prints", "icon": "palette", "description": "Limited edition pieces", "image": "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=400&h=300&fit=crop" },
+    { "name": "Crafts", "icon": "scissors", "description": "Handmade originals", "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=300&fit=crop" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Culture Hoodie",
+      "price": 89.99,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop",
+      "category": "Apparel",
+      "badge": "New Drop"
+    },
+    {
+      "id": 2,
+      "name": "Heritage Chain",
+      "price": 45.00,
+      "image": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&h=600&fit=crop",
+      "category": "Accessories",
+      "badge": "Best Seller"
+    },
+    {
+      "id": 3,
+      "name": "Roots Tee",
+      "price": 39.99,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=600&fit=crop",
+      "category": "Apparel",
+      "badge": null
+    },
+    {
+      "id": 4,
+      "name": "Vision Print",
+      "price": 120.00,
+      "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=600&fit=crop",
+      "category": "Art & Prints",
+      "badge": "Limited"
+    },
+    {
+      "id": 5,
+      "name": "Legacy Snapback",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c334e67a?w=600&h=600&fit=crop",
+      "category": "Accessories",
+      "badge": null
+    },
+    {
+      "id": 6,
+      "name": "Handwoven Basket",
+      "price": 65.00,
+      "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop",
+      "category": "Crafts",
+      "badge": "Handmade"
+    }
+  ],
+  "built_by": {
+    "name": "Altitudz",
+    "url": "https://altitudz.com"
+  }
+}

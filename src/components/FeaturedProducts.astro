@@ -1,0 +1,52 @@
+---
+import config from '../../site.json';
+const products = config.products;
+---
+<section id="products" class="py-24 px-6 lg:px-12">
+  <div class="container mx-auto">
+    <div class="text-center mb-16 fade-in-up">
+      <span class="badge badge-outline border-accent text-accent text-xs tracking-widest uppercase mb-4">The Collection</span>
+      <h2 class="text-4xl md:text-5xl font-heading font-bold">Featured Drops</h2>
+      <p class="text-base-content/60 mt-4 max-w-md mx-auto">Handpicked pieces that define the culture.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
+      {products.map((product) => (
+        <div class="card bg-base-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+          <!-- Image -->
+          <div class="relative aspect-square bg-base-300/50 overflow-hidden">
+            <img src={product.image} alt={product.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+
+            {/* Badge */}
+            {product.badge && (
+              <div class="absolute top-3 left-3">
+                <span class="badge badge-accent text-xs font-medium">{product.badge}</span>
+              </div>
+            )}
+
+            {/* Hover overlay */}
+            <div class="absolute inset-0 bg-base-100/80 backdrop-blur-sm flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button class="btn btn-sm btn-accent add-to-cart"
+                data-id={product.id}
+                data-name={product.name}
+                data-price={product.price}>
+                Add to Cart
+              </button>
+              <button class="btn btn-sm btn-outline">Quick View</button>
+            </div>
+          </div>
+
+          <div class="card-body p-5">
+            <p class="text-xs text-base-content/50 uppercase tracking-wider mb-1">{product.category}</p>
+            <h3 class="font-heading font-semibold text-lg">{product.name}</h3>
+            <p class="text-accent font-bold text-lg mt-2">{config.currency_symbol}{product.price.toFixed(2)}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#" class="btn btn-outline btn-lg px-12">View All Products</a>
+    </div>
+  </div>
+</section>
